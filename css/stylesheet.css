@@ -1,0 +1,292 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: font-family: 'Source Sans Pro', sans-serif;
+	
+}
+.clear{
+clear:both; 
+}
+
+a{
+text-decoration:none;
+color:white;
+}
+a:hover{
+text-decoration:none;
+color:white;
+}
+
+/*///////////////////////
+	    Le Menu
+///////////////////////*/
+
+.container-fluid{
+	margin:auto;
+}
+#conteneur-menu{
+	overflow-y: visible ;
+}
+#menu{
+	width: 100%;
+  	margin:0;
+	background-color: rgba(78,78,78,0.4);
+	z-index: 1000;
+	font-size: 23px;
+	font-weight: lighter;
+	text-align: center;
+	text-transform: uppercase;
+	position: fixed;	
+}
+#menu dl{
+	float:left;
+    height:60px;  
+    margin:0 auto;
+	padding:0px 0px 0px 0px;
+	min-width:250px;
+	display:block;
+}
+#menu dt{
+	display:block;
+	height:60px;
+	color:#58585a;
+	line-height:32px;
+	text-align:center;
+	padding:15px 0px 0px 0px; 
+	border-right:solid 1px slategrey;
+}
+
+#menu dt a{ 
+    /*color:#373737;*/
+	display:block;
+	text-decoration:none;
+	font-weight:lighter;
+}
+#menu dt a:hover{
+	color:green;
+	text-decoration:none;
+	font-weight: lighter;
+}
+
+#menu dd{
+	display:block;
+	margin:0;
+	padding:0;
+	background-color: rgba(78,78,78,0.5);
+	position: relative;
+	font-size:24px;
+}
+
+#menu dd ul{
+	margin:0;
+	padding:0;
+	text-align:center;
+	list-style:none;
+}
+
+#menu dd ul li{
+	display:block;
+}
+
+#menu dd ul li a{
+	color:white;
+	display:block;
+	text-decoration:none;
+	height:60px;
+	padding-top:10px;
+	line-height:30px;
+	border-bottom:solid 1px slategrey;
+}
+
+#menu dd ul li a:hover{
+	background-color: rgba(78,78,78,0.5);
+}
+
+#menu dl dd{
+	display:none;	
+}
+
+#menu dl:hover dd{
+	display:block;
+}
+
+
+.carousel-caption{
+	background-image: url(../images/logo-geotlandes.png);
+	width:804px;
+	height:265px;
+	margin-bottom:50%;
+	margin-left:20%;
+	padding:0px 0px 0px 0px;
+}
+
+/*///////////////////////
+	Le Menu Rectangle
+///////////////////////*/
+
+.rectangle{
+	background: #fff;
+  	padding: 30px 10px 750px 10px;
+  	margin: 0px auto;
+
+}
+
+.geometre {
+	width: 300px;
+  	height: 250px;
+  	background-size: cover;
+  	position: relative;
+  	margin: -175px 20px 0px 20px;
+  	border: 3px solid green;
+}
+
+
+.maitrise {
+	float: left;
+	background-image: url(../images/menu/topometre.jpg);
+}
+
+.amenagement {
+	float: left;
+	background-image: url(../images/menu/amenagement.jpg);
+}
+.travauxspe{
+	float: left;
+	background-image: url(../images/menu/travauxspe.jpg);
+
+}
+.travauxfonciers{
+	float: left;
+	background-image: url(../images/menu/travauxfonciers.jpg);
+
+}
+h1{
+	width: 298px;
+	height: 248px;
+	font-size: 23px;
+	margin-top:-2px;
+	font-weight: lighter;
+	line-height: 20px;
+	color: white;
+	letter-spacing: 2px;
+	padding-top:110px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: none;
+	
+}
+
+.description{
+	display:none;
+	background-color: rgba(20,134,47,0.5);
+
+
+}
+
+/*///////////////////////
+	 Le Responsive
+///////////////////////*/
+
+@media only screen and (max-width:990px){
+.carousel {
+	margin-top:-250px;
+}
+/*.geometre{
+	display: none;
+}*/
+.site-container{
+	overflow: scroll;
+	height: 100%;
+	padding-top:0;
+	bottom:0;
+	right:0;
+	left:0; 
+
+}
+.site-pusher{
+	transform: translateX(0px);
+	transition-duration: 0.3s;
+	height: 100%;
+}
+.menu__icon{
+	position: relative;
+	margin-left:-15px;
+	display: block;
+	float: left;
+	width: 50px;
+	height: 50px;
+	background-color: #58585a;;
+	cursor: pointer;
+}
+.menu__icon::after{
+	content:'';
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 0;
+	top:10px;
+	left:15px;
+	box-shadow:0px 10px 0px 1px #fff, 0 16px 0 1px #FFF, 0 22px 0 1px #fff;
+}
+#conteneur-menu{
+	float: none;
+	height: 300px;
+	position: static;
+}
+#menu{
+	position: static;
+	float: none;
+	background-color:none;
+	left: 0;
+	z-index: 1000;
+	bottom: 0;
+	width: 250px;
+	height: 300px;
+	transform: translateX(-265px);
+}
+#menu dl{
+	float: none;
+}
+#menu dt{
+	border-bottom:solid 1px slategrey;
+}
+#menu dd{
+
+	display:inline-block;
+	min-width: 250px;
+	margin:-60px 0 0 250px;
+	
+}
+#menu a{
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+
+}
+.with--sidebar .site-pusher{
+		transform: translateX(250px);
+}
+
+
+.carousel-caption{
+	background-image: url(../images/logo-geotlandes-resp.png);
+	width:402px;
+	height:133px;
+	margin-bottom:52%;
+	margin-left:30%;
+}
+
+}
+
+@media (max-width:320px){
+
+	.carousel-caption{
+		background-image: url(../images/logo-geotlandes-responsive.png);
+		width:201px;
+		height:67px;
+		margin-left:10%;
+		
+	}
+
+}

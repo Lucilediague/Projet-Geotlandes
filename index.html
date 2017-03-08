@@ -2,6 +2,8 @@
 <html>    
     <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
 
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
@@ -17,7 +19,8 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
      <link href="css/stylesheet.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
+     <link href="css/responsive.css" rel="stylesheet" type="text/css" media="screen">
+     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Josefin+Sans|Questrial|Raleway|Titillium+Web" rel="stylesheet"> 
     <title>GEOTLANDES</title>
     <script>
     $('.dropdown-toggle').dropdown()
@@ -30,19 +33,19 @@
 <div class="container-fluid" id="conteneur-menu">
     <a href="#" class="menu__icon" id="menu__icon"></a> <!--//responsive--> 
     <div id="menu" class="menu">
-         <dl><dt><a href="#actvites">Activités</a></dt></dl>
-         <dl><dt><a href="#prestations">Prestations</a></dt>
+         <dl><dt><a href="#activites">Activités</a></dt></dl>
+         <dl><dt><a href="">Prestations</a></dt>
          <dd>
              <ul>
                 <li><a href="amenagements.html">Aménagement</a></li>
-                <li><a href="travaux-specifiques.html">Travaux spécifiques</a></li>                 
-                <li><a href="travaux-fonciers.html">Travaux Fonciers</a></li>
+                <li><a href="travauxspecifiques.html">Travaux spécifiques</a></li>                 
+                <li><a href="travauxfonciers.html">Travaux Fonciers</a></li>
              </ul>
          </dd>
          </dl>
-        <dl><dt><a href="references">Références</a></dt></dl>
-        <dl><dt><a href="devis.php">Devis</a></dt></dl>
-        <dl><dt><a href="contact.php">Contact</a></dt></dl>
+        <dl><dt><a href="#references">Références</a></dt></dl>
+        <dl><dt><a href="Devis.html">Devis</a></dt></dl>
+        <dl><dt><a href="#contact">Contact</a></dt></dl>
     </div> 
    
 
@@ -50,42 +53,42 @@
 
 <div id="slider-geolandes" class="carousel slide" data-ride="carousel">
   
-  <ol class="carousel-indicators">
+   <!--  <ol class="carousel-indicators">
     <li data-target="#slider-geolandes" data-slide-to="0" class="active"></li>
     <li data-target="#slider-geolandes" data-slide-to="1"></li>
     <li data-target="#slider-geolandes" data-slide-to="2"></li>
-  </ol>
+  </ol>-->
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="images/24-2015-2.JPG" alt="...">
-      <div class="carousel-caption"></div>
+      <img src="images/slider/24-2015-2.JPG" alt="...">
+      <!-- <div class="carousel-caption"></div> -->
     </div>
     <div class="item">
-      <img src="images/21-2012.JPG" alt="...">
-      <div class="carousel-caption"></div>
+      <img src="images/slider/21-2012.JPG" alt="...">
+     <!--  <div class="carousel-caption"></div> -->
     </div>
     <div class="item">
-      <img src="images/32-2015 2.JPG" alt="...">
-      <div class="carousel-caption"></div>
+      <img src="images/slider/32-2015-2.JPG" alt="...">
+     <!--  <div class="carousel-caption"></div> -->
     </div>
   </div>
 
   <!-- Controls -->
-<!-- <a class="left carousel-control" href="#slider-geolandes" role="button" data-slide="prev">
+<a class="left carousel-control" href="#slider-geolandes" role="button" data-slide="prev">
  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span> 
   </a>
   <a class="right carousel-control" href="#slider-geolandes" role="button" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>-->
+    <span class="sr-only">Next</span>
   </a>
+  
 </div>
   <div class="clearfix"></div>
 
 <div class="rectangle">
-  
   <div class="geometre maitrise">
     <h1 class="description"><a href ="#activites">maîtrise d'œuvre</a></h1>
   </div>
@@ -95,22 +98,202 @@
   </div>
 
     <div class="geometre travauxspe">
-    <h1 class="description"><a href="travaux-specifiques.html">Travaux spécifiques</a></h1>
-  </div>
+    <h1 class="description"><a href="travauxspecifiques.html">Travaux spécifiques</a></h1>
+    </div>
 
     <div class="geometre travauxfonciers ">
-    <h1 class="description"><a href="travaux-fonciers.html">Travaux Fonciers</a></h1>
+    <h1 class="description"><a href="travauxfonciers.html">Travaux Fonciers</a></h1>
   </div>
 </div>
 
-
 </div>
+<div class="clearfix"></div>
+
+ <!-- Départ pour page html -->
 
 
+  <div id="presentation">
+  <h1 class="presentation">Bienvenue sur le site de <span class="green"> GEOTLANDES</span></h1>
+    <div class="picture"></div>
+      <div class="texte">
+      <p class="text">Le cabinet Géotlandes a été créé en 2012 à Pissos (Landes) par Cécile et Benoît Labat, deux géomètres expert qui s’appuient sur 30 années d’expériences. 
+      Une attention toute particulière est accordé dans l’accompagnement de vos projets d’aménagement :</p>
+        <ul class="ul">
+          <li>Urbain</li>
+          <li>Ruraux</li>
+          <li>Bornage</li>
+          <li>Maitrîse d’œuvre</li>
+          <li>Travaux spécifiques</li>
+          <li>Irrigation</li>
+        </ul>
+      </div>
+      <div class="picture1"></div>
+      <div class="texte2">
+        <ul class="ul">
+          <li>Une équipe réactive et dynamique, un équipement à la pointe de la technologie.</li>
+          <li>Des prestations réalisées dans le plus grand respect des normes et réglementations en vigueur.</li>
+          <li>Géotlandes répond à toutes vos demandes et vous accompagne dans vos démarches d’expertise.</li>
+        </ul>
+     
+      </div>
+    </div>
 
+    <div id="activites" class="oeuvre">
+      <h1 class="oeuvres">Activités de <span class="green"> GEOTLANDES</span></h1>
+    <div class="picture2"></div>
+      <div class="texte">
+      <p class="text">Notre activité comprend :</p>
+      <ul class="ul">
+          <li>La voirie</li>
+          <li>L'assainissement</li>
+          <li>L'éclairage public</li>
+          <li>Les réseaux d'électricités, téléphoniques, de gaz</li>
+      </ul>
+      <p class="text">Elle comprend la prestation complète d'une maîtrise d'œuvre :</p>
+        <ul class="ul">
+          <li>L'AP sommaire</li>
+          <li>L'AP détaillé</li>
+          <li>Le projet d'exécution</li>
+          <li>La rédaction du dossier de consultation pour les entreprises</li>
+          <li>L'assistance Maître d’ouvrage pour les marchés de travaux</li>
+          <li>Le contrôle général des w à travers des réunions hebdomadaires</li>
+          <li>La réception et le décompte des travaux</li>
+          <li>L’élaboration du dossier des ouvrages exécutés</li>
+        </ul>
+    </div>
+    </div>
+
+   <div id="references" class="ref">
+     <h3 class="hidden">Références</h3>
+      <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/uRiJFOC_eJA" frameborder="1" poster="images/ref/fond-video.jpg" allowfullscreen></iframe>
+   </div>
+
+   <div id="contact" class="">
+         <h1 class="presentation">Contactez-nous</h1>
+<div class="contact">
+   <form action= "Contact" method="POST">
+        <p class="text">Merci de remplir soigneusement le formulaire de mise en relation afin de faciliter le traitement de votre demande.</p>
+        <h2>Coordonnées:</h2>
+           
+               <div class="formulaire">
+                 <div>
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" align="left" />
+                </div>
+                <div>
+                    <label for="adresse">Adresse:</label>
+                    <input type="text" id="adresse" />
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" />
+                </div>
+              </div>
+             <div class="formulaire">
+               <div>
+                    <label for="prenom">Prénom:</label>
+                    <input type="text" id="prenom" />
+                </div>
+                <div>
+                    <label for="cp">Code Postal:</label>
+                    <input type="number" id="cp" />
+                </div>
+                <div>
+                    <label for="tel">Téléphone:</label>
+                    <input type="text" id="tel" />
+                </div><br/>
+            </div>
+             <div class="formulaire">
+             <h2>Votre demande:</h2>
+            <div>
+                <textarea name="textarea" >
+                Vous pouvez écrire votre texte ici.
+                </textarea>
+            </div>
+              <br/>
+             <div>
+            <input type=submit value="Envoyer">
+            <input TYPE=reset value="Annuler">
+        </div>
+            </div>
+           
+       
+       
+      
+          <div class="formulaire">
+      <br/>
+        <br/>
+            <iframe class="google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5710.147268766677!2d-0.7817885315032403!3d44.30843671772851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd545a3b8951870f%3A0x1cf10962d8dfd074!2s29+Place+de+l&#39;%C3%89glise%2C+40410+Pissos!5e0!3m2!1sfr!2sfr!4v1488814241768" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        <br/>
+    </form>
 </div>
 </div>
+ <!-- Fin pour page html-->
+ <footer>
+<div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-6 footerleft ">
+        <div class="logofooter"> Contact</div>
+        <p>Bibette Cécile, Géomètre-Expert DPLG</p>
+        <p><i class="fa fa-map-pin"></i> 29, Place de l'Eglise, Pissos -        40410, France</p>
+        <p><i class="fa fa-phone"></i> Phone: 05 58 04 73 40</p>
+        <p><i class="fa fa-envelope"></i> <a href="#contact">E-mail : cecile-bibette@orange.fr</a></p>
+        
+      </div>
+      <div class="col-md-2 col-sm-6 paddingtop-bottom">
+        <h6 class="heading7">LIENS UTILES</h6>
+        <ul class="footer-ul">
+          <li><a href="http://cadastre.gouv.fr/scpc/accueil.do" target="_blank"> Plans Cadastraux</a></li>
+          <li><a href="https://www.geoportail.gouv.fr/" target="_blank"> Information géographique de référence: cartes, photographies aériennes.</a></li>
+          <li><a href="http://www.developpement-durable.gouv.fr/" target="_blank"> Développement durable</a></li>
+          <li><a href="http://www.geometre-expert.fr/oge/accueil-stu_5078" target="_blank"> La profession</a></li>
 
+        </ul>
+      </div>
+
+      <div class="col-md-3 col-sm-6 paddingtop-bottom">
+        <h6 class="heading7">PLAN DU SITE</h6>
+         <ul class="footer-ul">
+          <li><a href="#prestations"> Prestations</a></li>
+          <li><a href="#references"> Références</a></li>
+          <li><a href="#devis"> Devis</a></li>
+          <li><a href="#contact"> Contact</a></li>
+          <li><a href="#liensutiles"> Liens Utiles</a></li>
+          <li><a href="#maitrised'oeuvre'"> Maitrise d'oeuvre</a></li>
+          <li><a href="#amenagements"> Aménagements</a></li>
+          <li><a href="#travauxfonciers"> Travaux Fonciers</a></li>
+          <li><a href="#travauxspecifiques"> Travaux Spécifiques</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 col-sm-6 paddingtop-bottom">
+        <div class="fb-page" data-href="https://www.facebook.com/cecile.bibette" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+          <div class="fb-xfbml-parse-ignore">
+            <blockquote cite="https://www.facebook.com/cecile.bibette"><a href="https://www.facebook.com/cecile.bibette" target="_blank">Facebook</a></blockquote>
+
+            <div class="fb-page" data-href="https://fr.linkedin.com/in/cecile-bibette-5382a6ba" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+              <div class="fb-xfbml-parse-ignore">
+                <blockquote cite="https://fr.linkedin.com/in/cecile-bibette-5382a6ba"><a href="https://fr.linkedin.com/in/cecile-bibette-5382a6ba" target="_blank">Linkedin</a></blockquote>
+
+          <div class="fb-page" data-href="https://www.youtube.com/watch?v=uRiJFOC_eJA" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+            <div class="fb-xfbml-parse-ignore">
+              <blockquote cite="https://www.youtube.com/watch?v=uRiJFOC_eJA"><a href="https://www.youtube.com/watch?v=uRiJFOC_eJA" target="_blank">YouTube</a></blockquote>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        
+    </footer>
+    <div class="copyright">
+  <div class="container">
+    <div class="col-md-12">
+      <p>© Copyright &copy; 2017 - All Rights Reserved</p>
+    </div>
+</div>
+</div>
 </body>
 
 </html>

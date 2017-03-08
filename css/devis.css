@@ -26,14 +26,17 @@ color:white;
 	    Le Menu
 ///////////////////////*/
 
+.container-fluid{
 
+	
+}
 #conteneur-menu{
 	overflow-y: visible ;
 }
 #menu{
 	width: 100%;
 	padding: 0;
-	background-color: rgba(78,78,78,0.6);
+	background-color: rgba(78,78,78,0.4);
 	z-index: 1000;
 	font-family: 'Raleway', sans-serif;
 	font-size: 23px;
@@ -46,7 +49,7 @@ color:white;
 	float:left;
     height:60px;  
     margin:0 auto;
-	min-width:267px;
+	min-width:260px;
 	display:block;
 }
 #menu dt{
@@ -114,203 +117,15 @@ color:white;
 }
 
 /*///////////////////////
-	Le Menu Rectangle
+	    Fin Menu
 ///////////////////////*/
 
-.rectangle{
-	background: #fff;
-  	padding: 30px 10px 0px 10px;
-  	margin: 0px auto;
-}
-.geometre {
-	width: 300px;
-  	height: 250px;
-  	background-size: cover;
-  	position: relative;
-  	margin: -155px 20px 0px 20px;
-  	border: 3px solid green;
-}
-.maitrise {
-	float: left;
-	background-image: url(../images/menu/travauxspe.jpg);
-}
-.amenagement {
-	float: left;
-	background-image: url(../images/menu/amenagement.jpg);
-}
-.travauxspe{
-	float: left;
-	background-image: url(../images/menu/travauxfonciers.jpg);
-}
-.travauxfonciers{
-	float: left;
-	background-image: url(../images/menu/topometre.jpg);
+/*FORMULAIRE*/
 
-}
-h1{
-	width: 298px;
-	height: 248px;
-	font-family: 'helvetica neue', sans-serif;
-	font-size: 23px;
-	margin-top:-2px;
-	font-weight: lighter;
-	line-height: 27px;
-	color: white;
-	letter-spacing: 2px;
-	padding-top:110px;
-	text-align: center;
-	text-transform: uppercase;
-	background-color: none;	
-}
-.description{
-	display:none;
-	background-color: rgba(20,134,47,0.5);
-}
-
-/*///////////////////////
-	 Presentation
-///////////////////////*/
-
-#presentation {
-	width: 100%;
-	background: white;
-  	padding: 0px 40px 700px 40px;
-  	margin: 0px auto;
-}
-
-h1.presentation {
-	width:100%;
-	font-family: 'helvetica neue', sans-serif;
-	padding-top:100px;
-	margin:0 auto;
-	font-size: 30px;
-	letter-spacing: 0px;
-	font-weight: normal;
-	color:black;
-	text-align: center;
-}
-.green {
-	color: green;
-}
-.picture {
-	float:left;
-	width:40%;
-	background-image: url(../images/presentation/bibette.jpg);
-	width: 450px;
-	height: 287px;
-	border: 3px solid green;
-}
-.texte{	
-	width: 60%;
-	font-family: 'Questrial', sans-serif;
-	float:left;
-	margin-left: 50px;
-	padding: 15px 10px;
-}
-p.text {
-	font-family: 'Questrial', sans-serif;
-	font-size:18px;
-	text-align: justify;
-
-}
-.texte2{
-	width: 60%;
-	float:left;
-	font-family: 'Questrial', sans-serif;
-	margin-right: 20px;
-	padding: 5px 10px;
-	margin-top:90px;
-}
-
-ul.ul{
-	font-size:18px;
-	font-family: 'Titillium Web', sans-serif;
-	
-
-}
-.picture1{
-	float: right;
-	width: 40%;
-	margin-top:20px;
-	margin-right: 35px;
-	background-image: url(../images/presentation/labat.jpg);
-	width: 450px;
-	height: 302px;
-	border: 3px solid green;
-
-}
-
-
-/*///////////////////////
-	Maitrise d'œuvre
-///////////////////////*/
-
-.oeuvre {
-	width: 100%;
-	background: #f2f2f2;
-  	padding: 0px 40px 600px 40px;
-  	margin: 0px auto;
-}
-h1.oeuvres{
-	width:100%;
-	margin:0 auto;
-	padding-top:-20px;
-	font-size: 30px;
-	letter-spacing: 0px;
-	line-height: 30px;
-	font-weight: normal;
-	color:black;
-	text-align: center;
-}
-.picture2 {
-	float:left;
-	width: 40%;
-	margin:0 auto;
-	border: 3px solid green;
-	background-image: url(../images/oeuvre/maitrise-oeuvre.jpg);
-	width: 450px;
-	height: 338px;
-	padding:0px;
-}
-/*///////////////////////
-		Références
-///////////////////////*/
-.ref {
-	width: 100%;
-	background: url(../images/ref/4L-Trophy-2016.jpg);
-  	padding: 0px 10px 600px 10px;
-  	margin: 0px auto;
-	background-size: cover;
-}
-.video {
-	float: right;
-	margin-top: 275px;
-}
-
-h3.hidden {
-	visibility: hidden;
-	display : none;
-}
-
-/*///////////////////////
-		Contact
-///////////////////////*/
-.contact{
-	width:100%;
-	margin-left: 50px;
-	padding: 0px 10px 700px 10px;
-}
-.formulaire{
-	float:left;
-	width:50%;
-}
-textarea{
- 	background-color:#F5F5F5;
-	width: 450px;
-	height:300px; 
-
-}
-input, select, option {
+fieldset {
+ background-color:#FAFAFA;
+ }
+input, textarea, select, option {
  background-color:#F5F5F5;
  }
 input {
@@ -320,7 +135,9 @@ input {
  width:30px;
  box-shadow:1px 1px 2px limegreen inset;
  }
-
+input[type=radio] {
+margin-right:10px;
+}
 input[type=submit], input[type=reset] {
  width:100px;
  margin-left:5px;
@@ -332,7 +149,7 @@ input[type=submit], input[type=reset] {
 	 font-size: 30px;
  }
  p {
-     font-size: 18px;
+     font-size: 20px
  }
  label {
 	 font-size: 17px;
@@ -346,12 +163,32 @@ input[type=text] , input[type=email], input[type=number] {
     display: block;
 }
 
-.google{
-
-	width:360px;
-	height:320px;
+ /*FIN FORMULAIRE*/
+ 
+body{
+	margin:0;
+	padding:0;
+	font-family: font-family 'Source Sans Pro', sans-serif;
+	
+}
+.clear{
+clear:both; 
+}
+a{
+text-decoration:none;
+color:white;
+}
+a:hover{
+text-decoration:none;
+color:white;
+}
+.green {
+    color: green;
 }
 
+.texte {
+	margin-top: 100px;
+}
 /*///////////////////////
 	 	Footer
 ///////////////////////*/
@@ -391,4 +228,3 @@ footer { background-color:#202021; min-height:350px; font-family: font-family 'S
  .heading7 { font-size:21px; font-weight:700; color:#d9d6d6; margin-bottom:22px;}
  .post p { font-size:12px; color:#FFF; line-height:20px;}
  .post p span { display:block; color:#8f8f8f;}
-

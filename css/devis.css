@@ -26,10 +26,7 @@ color:white;
 	    Le Menu
 ///////////////////////*/
 
-.container-fluid{
-
 	
-}
 #conteneur-menu{
 	overflow-y: visible ;
 }
@@ -161,6 +158,17 @@ input[type=text] , input[type=email], input[type=number] {
     box-sizing: border-box;
     position: relative;
     display: block;
+}
+
+.formulaire{
+	float:left;
+	width:50%;
+}
+textarea{
+ 	background-color:#F5F5F5;
+	width: 450px;
+	height:300px; 
+
 }
 
  /*FIN FORMULAIRE*/

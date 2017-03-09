@@ -7,25 +7,24 @@
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-            crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-            <!-- Latest compiled and minified JavaScript -->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-                crossorigin="anonymous"></script>
-                <link href="css/devis.css" rel="stylesheet" type="text/css" media="screen">
-                <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
-                <title>Devis</title>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
+
+    <link href="css/devis.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/responsive2.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
+    <title>Devis</title>
 </head>
 
 <body>
     <div class="site-container">
-        <div class="site-pusher">
+        <div class="site-pusher">w
             <div class="container-fluid" id="conteneur-menu">
                 <a href="#" class="menu__icon" id="menu__icon"></a>
                 <!--//responsive-->
@@ -54,172 +53,131 @@
                     </dl>
                 </div>
                 <div class="texte">
-                    <header>
-                        <h1>Demande de devis</h1>
-                    </header>
-                    <p>Pour un traitement rapide de votre demande, nous vous remercions de remplir soigneusement le formulaire
-                        ci-après.
-                    </p>
-                    <form action="Devis" method="POST">
-                        <fieldset>
-                            <h2>Coordonnées:</h2>
-                            <div style="float:left;width:50%;">
+                    <div class="devis">
+                        <form action="Devis" method="POST">
+                            <h2>Demande de devis</h2>
+                            <p>Pour un traitement rapide de votre demande, nous vous remercions de remplir soigneusement le
+                                formulaire ci-après.
+                            </p>
+
+                            <fieldset>
+                                <h2>Coordonnées:</h2>
+                                <div class="formulaire">
+                                    <div>
+                                        <label for="nom">Nom:</label>
+                                        <input type="text" id="nom" align="left" />
+                                    </div>
+                                    <div>
+                                        <label for="adresse">Adresse:</label>
+                                        <input type="text" id="adresse" />
+                                    </div>
+                                    <div>
+                                        <label for="email">Email:</label>
+                                        <input type="email" id="email" />
+                                    </div>
+                                </div>
+                                <div class="formulaire">
+                                    <div>
+                                        <label for="prenom">Prénom:</label>
+                                        <input type="text" id="prenom" />
+                                    </div>
+                                    <div>
+                                        <label for="cp">Code Postal:</label>
+                                        <input type="number" id="cp" />
+                                    </div>
+                                    <div>
+                                        <label for="tel">Téléphone:</label>
+                                        <input type="text" id="tel" />
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <h2>Travaux souhaités:</h2>
+                            <div class="formulaire">
                                 <div>
-                                    <label for="nom">Nom:</label>
-                                    <input type="text" id="nom" align="left" />
+                                    <input type="checkbox" id="bornage" />
+                                    <label for="bornage">Bornage, reconnaissance de limites</label>
                                 </div>
                                 <div>
-                                    <label for="adresse">Adresse:</label>
-                                    <input type="text" id="adresse" />
+                                    <input type="checkbox" id="topographie" />
+                                    <label for="topographie">Plan topographique</label>
                                 </div>
                                 <div>
-                                    <label for="email">Email:</label>
-                                    <input type="email" id="email" />
-                                </div>
-                            </div>
-                            <div style="float:left;width:50%;">
-                                <div>
-                                    <label for="prenom">Prénom:</label>
-                                    <input type="text" id="prenom" />
+                                    <input type="checkbox" id="plan" />
+                                    <label for="plan">Plan de façade et d'intérieur</label>
                                 </div>
                                 <div>
-                                    <label for="cp">Code Postal:</label>
-                                    <input type="number" id="cp" />
+                                    <input type="checkbox" id="division" />
+                                    <label for="division">Division parcellaire et cadastrale</label>
+                                </div>
+                            </div>
+                            <div class="formulaire">
+                                <div>
+                                    <input type="checkbox" id="copoprite" />
+                                    <label for="copopriete">Copopriété immeuble, division volumes</label>
                                 </div>
                                 <div>
-                                    <label for="tel">Téléphone:</label>
-                                    <input type="text" id="tel" />
+                                    <input type="checkbox" id="implantation" />
+                                    <label for="implantation">Implantation d'ouvrage, topométrie de précision</label>
                                 </div>
+                                <div>
+                                    <input type="checkbox" id="autres" />
+                                    <label for="autres">Autres</label>
+                                </div>
+                                <br/>
                             </div>
-                        </fieldset>
-                        <h2>Travaux souhaités:</h2>
-                        <div style="float:left;width:50%;">
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <fieldset>
+                                <h2>Terrain:</h2>
+                                <div class="formulaire">
+                                    <div>
+                                        <label for="proprietaire">Propriétaire:</label>
+                                        <input type="text" id="proprietaire" />
+                                    </div>
+                                    <div>
+                                        <label for="commune">Commune:</label>
+                                        <input type="text" id="commune" />
+                                    </div>
+                                    <div>
+                                        <label for="adresse">Adresse:</label>
+                                        <input type="text" id="adresse" />
+                                    </div>
+                                </div>
+                                <div class="formulaire">
+                                    <div>
+                                        <label for="section">Section cadastrale:</label>
+                                        <input type="text" id="section" />
+                                    </div>
+                                    <div>
+                                        <label for="parcelle">N° parcelle cadastralle:</label>
+                                        <input type="number" id="parcelle" />
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <h2>Bornage et reconnaissance de limites:</h2>
+                            <p>Nature du terrain:</p>
                             <div>
-                                <input type="checkbox" id="bornage" />
-                                <label for="bornage">Bornage, reconnaissance de limites</label>
+                                <input type="checkbox" id="entretenu" />
+                                <label for="entretenu">Entretenu ou dégagé</label>
                             </div>
                             <div>
-                                <input type="checkbox" id="topographie" />
-                                <label for="topographie">Plan topographique</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" id="plan" />
-                                <label for="plan">Plan de façade et d'intérieur</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" id="division" />
-                                <label for="division">Division parcellaire et cadastrale</label>
-                            </div>
-                        </div>
-                        <div style="float:left;width:50%;">
-                            <div>
-                                <input type="checkbox" id="copoprite" />
-                                <label for="copopriete">Copopriété immeuble, division volumes</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" id="implantation" />
-                                <label for="implantation">Implantation d'ouvrage, topométrie de précision</label>
+                                <input type="checkbox" id="boise" />
+                                <label for="boise">Boisé</label>
                             </div>
                             <div>
                                 <input type="checkbox" id="autres" />
                                 <label for="autres">Autres</label>
                             </div>
                             <br/>
-                        </div>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <fieldset>
-                            <h2>Terrain:</h2>
-                            <div style="float:left;width:50%;">
-                                <div>
-                                    <label for="proprietaire">Propriétaire:</label>
-                                    <input type="text" id="proprietaire" />
-                                </div>
-                                <div>
-                                    <label for="commune">Commune:</label>
-                                    <input type="text" id="commune" />
-                                </div>
-                                <div>
-                                    <label for="adresse">Adresse:</label>
-                                    <input type="text" id="adresse" />
-                                </div>
-                            </div>
-                            <div style="float:left;width:50%;">
-                                <div>
-                                    <label for="section">Section cadastrale:</label>
-                                    <input type="text" id="section" />
-                                </div>
-                                <div>
-                                    <label for="parcelle">N° parcelle cadastralle:</label>
-                                    <input type="number" id="parcelle" />
-                                </div>
-                            </div>
-                        </fieldset>
-                        <h2>Bornage et reconnaissance de limites:</h2>
-                        <p>Nature du terrain:</p>
-                        <div>
-                            <input type="checkbox" id="entretenu" />
-                            <label for="entretenu">Entretenu ou dégagé</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="boise" />
-                            <label for="boise">Boisé</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="autres" />
-                            <label for="autres">Autres</label>
-                        </div>
-                        <br/>
 
-                        <p>Bornes existantes:</p>
-                        <div>
-                            <label for="oui">Oui</label>
-                            <input type="radio" id="oui" />
-                            <label for="non">Non</label>
-                            <input type="radio" id="non" />
-                        </div>
-                        <br/>
-                        <div>
-                            <label for="oui">Si oui, combien?</label>
-                            <input type="number" id="oui" />
-                        </div>
-                        <br/>
-                        <div>
-                            <label for="bornes">Estimation du nombre de bornes à importer</label>
-                            <input type="number" id="bornes" />
-                        </div>
-                        <div>
-                            <p>Problème de voisinage?</p>
-                            <label for="oui">Oui</label>
-                            <input type="radio" id="oui" />
-                            <label for="non">Non</label>
-                            <input type="radio" id="non" />
-                        </div>
-                        <br/>
-                        <fieldset>
-                            <h2>Mise en copropriété d'un immeuble</h2>
+                            <p>Bornes existantes:</p>
                             <div>
-                                <label for="etages">Nombre d'étages</label>
-                                <input type="number" id="etages" />
-                            </div>
-                            <br/>
-                            <div>
-                                <label for="appart">Nombre d'appartements</label>
-                                <input type="number" id="appart" />
-                            </div>
-                            <br/>
-                            <div>
-                                <label for="bornes">Estimation du nombre de bornes à importer</label>
-                                <input type="number" id="bornes" />
-                            </div>
-                            <div>
-                                <p>Appartement occupés:</p>
                                 <label for="oui">Oui</label>
                                 <input type="radio" id="oui" />
                                 <label for="non">Non</label>
@@ -230,180 +188,256 @@
                                 <label for="oui">Si oui, combien?</label>
                                 <input type="number" id="oui" />
                             </div>
-                            <div style="float:left;width:50%;">
-                                <div>
-                                    <p>Cave:</p>
-                                    <label for="oui">Oui</label>
-                                    <input type="radio" id="oui" />
-                                    <label for="non">Non</label>
-                                    <input type="radio" id="non" />
-                                </div>
-                                <div>
-                                    <p>Combles:</p>
-                                    <label for="oui">Oui</label>
-                                    <input type="radio" id="oui" />
-                                    <label for="non">Non</label>
-                                    <input type="radio" id="non" />
-                                </div>
-                                <div>
-                                    <p>Cour:</p>
-                                    <label for="oui">Oui</label>
-                                    <input type="radio" id="oui" />
-                                    <label for="non">Non</label>
-                                    <input type="radio" id="non" />
-                                </div>
-                                <div>
-                                    <p>Jardin:</p>
-                                    <label for="oui">Oui</label>
-                                    <input type="radio" id="oui" />
-                                    <label for="non">Non</label>
-                                    <input type="radio" id="non" />
-                                </div>
+                            <br/>
+                            <div>
+                                <label for="bornes">Estimation du nombre de bornes à importer</label>
+                                <input type="number" id="bornes" />
                             </div>
-                            <div style="float:left;width:50%;">
-                                <div>
-                                    <p>Immeuble de plus de 15ans:</p>
-                                    <label for="oui">Oui</label>
-                                    <input type="radio" id="oui" />
-                                    <label for="non">Non</label>
-                                    <input type="radio" id="non" />
-
-                                </div>
-                                <div>
-                                    <p>Plans existants:</p>
-                                    <label for="oui">Oui</label>
-                                    <input type="radio" id="oui" />
-                                    <label for="non">Non</label>
-                                    <input type="radio" id="non" />
-                                </div>
+                            <div>
+                                <p>Problème de voisinage?</p>
+                                <label for="oui">Oui</label>
+                                <input type="radio" id="oui" />
+                                <label for="non">Non</label>
+                                <input type="radio" id="non" />
                             </div>
                             <br/>
-                        </fieldset>
-                        <h2>Votre demande:</h2>
-                        <div>
-                            <textarea name="textarea" rows="15" cols="100">
+                            <fieldset>
+                                <h2>Mise en copropriété d'un immeuble</h2>
+                                <div>
+                                    <label for="etages">Nombre d'étages</label>
+                                    <input type="number" id="etages" />
+                                </div>
+                                <br/>
+                                <div>
+                                    <label for="appart">Nombre d'appartements</label>
+                                    <input type="number" id="appart" />
+                                </div>
+                                <br/>
+                                <div>
+                                    <label for="bornes">Estimation du nombre de bornes à importer</label>
+                                    <input type="number" id="bornes" />
+                                </div>
+                                <div>
+                                    <p>Appartement occupés:</p>
+                                    <label for="oui">Oui</label>
+                                    <input type="radio" id="oui" />
+                                    <label for="non">Non</label>
+                                    <input type="radio" id="non" />
+                                </div>
+                                <br/>
+                                <div>
+                                    <label for="oui">Si oui, combien?</label>
+                                    <input type="number" id="oui" />
+                                </div>
+                                <div class="formulaire">
+                                    <br/>
+                                    <div>
+                                        <p>Cave:</p>
+                                        <label for="oui">Oui</label>
+                                        <input type="radio" id="oui" />
+                                        <label for="non">Non</label>
+                                        <input type="radio" id="non" />
+                                    </div>
+                                    <div>
+                                        <p>Combles:</p>
+                                        <label for="oui">Oui</label>
+                                        <input type="radio" id="oui" />
+                                        <label for="non">Non</label>
+                                        <input type="radio" id="non" />
+                                    </div>
+                                    <div>
+                                        <p>Cour:</p>
+                                        <label for="oui">Oui</label>
+                                        <input type="radio" id="oui" />
+                                        <label for="non">Non</label>
+                                        <input type="radio" id="non" />
+                                    </div>
+                                    <div>
+                                        <p>Jardin:</p>
+                                        <label for="oui">Oui</label>
+                                        <input type="radio" id="oui" />
+                                        <label for="non">Non</label>
+                                        <input type="radio" id="non" />
+                                    </div>
+                                </div>
+                                <div class="formulaire">
+                                    <br/>
+                                    <div>
+                                        <p>Immeuble de plus de 15ans:</p>
+                                        <label for="oui">Oui</label>
+                                        <input type="radio" id="oui" />
+                                        <label for="non">Non</label>
+                                        <input type="radio" id="non" />
+
+                                    </div>
+                                    <div>
+                                        <p>Plans existants:</p>
+                                        <label for="oui">Oui</label>
+                                        <input type="radio" id="oui" />
+                                        <label for="non">Non</label>
+                                        <input type="radio" id="non" />
+                                    </div>
+                                </div>
+                                <br/>
+                            </fieldset>
+                            <h2>Votre demande:</h2>
+                            <div>
+                                <textarea name="textarea">
                 Vous pouvez écrire votre texte ici.
                 </textarea>
-                        </div>
-                        <br/>
-                        <h2>Vous souhaitez être recontacté(e):</h2>
-                        <div>
-                            <input type="radio" id="tel" />
-                            <label for="tel">Par téléphone</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="email" />
-                            <label for="email">Par email</label>
-                        </div>
-                        <br/>
-                        <h3>Merci d'indiquer quels sont vos horaires de préférence</h3>
-                        <br/>
-                        <div>
-                            <input type="radio" id="lundi" />
-                            <label for="lundi">Lundi</label>
-                            <input type="radio" id="mardi" />
-                            <label for="mardi">mardi</label>
-                            <input type="radio" id="oui" />
-                            <label for="mercredi">Mercredi</label>
-                            <input type="radio" id="mercredi" />
-                            <label for="jeudi">Non</label>
-                            <input type="radio" id="jeudi" />
-                            <label for="vendredi">Vendredi</label>
-                            <input type="radio" id="sansimportance" />
-                            <label for="sansimportance">Sans importance</label>
-                        </div>
-                        <br/>
-                        <br/>
-                        <div>
-                            <input type="radio" id="7a9" />
-                            <label for="7a9">de 7h00 à 9h00</label>
-                            <input type="radio" id="9a12" />
-                            <label for="9a12">de 9h00 à 12h00</label>
-                            <input type="radio" id="12a14" />
-                            <label for="12a14">de 12h00 à 14h00</label>
-                            <input type="radio" id="14a17" />
-                            <label for="14a17">de 14h00 à 17h00</label>
-                            <input type="radio" id="17a20" />
-                            <label for="17a20">de 17h00 à 20h00</label>
-                            <input type="radio" id="sansimportance" />
-                            <label for="sansimportance">Sans importance</label>
-                        </div>
-                        <br/>
-                        <br/>
-                        <div>
-                            <input type=submit value="Envoyer">
-                            <input TYPE=reset value="Annuler">
-                        </div>
-                        <br/>
-                        <br/>
-                        <br/>
-                    </form>
-                </div>
-                <footer>
-<div class="container">
-    <div class="row">
-      <div class="col-md-4 col-sm-6 footerleft ">
-        <div class="logofooter"> Contact</div>
-        <p>Bibette Cécile, Géomètre-Expert DPLG</p>
-        <p><i class="fa fa-map-pin"></i> 29, Place de l'Eglise, Pissos -        40410, France</p>
-        <p><i class="fa fa-phone"></i> Phone: 05 58 04 73 40</p>
-        <p><i class="fa fa-envelope"></i> <a href="#contact">E-mail : cecile-bibette@orange.fr</a></p>
-        
-      </div>
-      <div class="col-md-2 col-sm-6 paddingtop-bottom">
-        <h6 class="heading7">LIENS UTILES</h6>
-        <ul class="footer-ul">
-          <li><a href="http://cadastre.gouv.fr/scpc/accueil.do" target="_blank"> Plans Cadastraux</a></li>
-          <li><a href="https://www.geoportail.gouv.fr/" target="_blank"> Information géographique de référence: cartes, photographies aériennes.</a></li>
-          <li><a href="http://www.developpement-durable.gouv.fr/" target="_blank"> Développement durable</a></li>
-          <li><a href="http://www.geometre-expert.fr/oge/accueil-stu_5078" target="_blank"> La profession</a></li>
+                            </div>
+                            <br/>
+                            <h2>Vous souhaitez être recontacté(e):</h2>
+                            <br/>
+                            <div>
+                                <input type="radio" id="tel" />
+                                <label for="tel">Par téléphone</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="email" />
+                                <label for="email">Par email</label>
+                            </div>
+                            <br/>
+                            <h3>Merci d'indiquer quels sont vos horaires de préférence</h3>
+                            <br/>
+                            <div class="formulaire">
+                                <div>
+                                    <br/>
+                                    <div>
+                                        <input type="radio" id="lundi" />
+                                        <label for="lundi">Lundi</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="mardi" />
+                                        <label for="mardi">Mardi</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="mercredi" />
+                                        <label for="mercredi">Mercredi</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="mercredi" />
+                                        <label for="jeudi">Jeudi</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="jeudi" />
+                                        <label for="vendredi">Vendredi</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="sansimportance" />
+                                        <label for="sansimportance">Sans importance</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="formulaire">
+                                <div>
+                                    <br/>
+                                    <div>
+                                        <input type="radio" id="7a9" />
+                                        <label for="7a9">de 7h00 à 9h00</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="9a12" />
+                                        <label for="9a12">de 9h00 à 12h00</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="12a14" />
+                                        <label for="12a14">de 12h00 à 14h00</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="14a17" />
+                                        <label for="14a17">de 14h00 à 17h00</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="17a20" />
+                                        <label for="17a20">de 17h00 à 20h00</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="sansimportance" />
+                                        <label for="sansimportance">Sans importance</label>
+                                    </div>
+                                </div>
+                                <br/>
+                                <br/>
+                            </div>
+                            <div>
+                                <input type=submit value="Envoyer">
+                                <input TYPE=reset value="Annuler">
+                            </div>
+                            <br/>
+                        </form>
+                    </div>
+                    <footer>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6 footerleft ">
+                                    <div class="logofooter"> Contact</div>
+                                    <p>Bibette Cécile, Géomètre-Expert DPLG</p>
+                                    <p><i class="fa fa-map-pin"></i> 29, Place de l'Eglise, Pissos -        40410, France</p>
+                                    <p><i class="fa fa-phone"></i> Phone: 05 58 04 73 40</p>
+                                    <p><i class="fa fa-envelope"></i> <a href="#contact">E-mail : cecile-bibette@orange.fr</a></p>
 
-        </ul>
-      </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 paddingtop-bottom">
+                                    <h6 class="heading7">LIENS UTILES</h6>
+                                    <ul class="footer-ul">
+                                        <li><a href="http://cadastre.gouv.fr/scpc/accueil.do" target="_blank"> Plans Cadastraux</a></li>
+                                        <li><a href="https://www.geoportail.gouv.fr/" target="_blank"> Information géographique de référence: cartes, photographies aériennes.</a></li>
+                                        <li><a href="http://www.developpement-durable.gouv.fr/" target="_blank"> Développement durable</a></li>
+                                        <li><a href="http://www.geometre-expert.fr/oge/accueil-stu_5078" target="_blank"> La profession</a></li>
 
-      <div class="col-md-3 col-sm-6 paddingtop-bottom">
-        <h6 class="heading7">PLAN DU SITE</h6>
-         <ul class="footer-ul">
-          <li><a href="#prestations"> Prestations</a></li>
-          <li><a href="#references"> Références</a></li>
-          <li><a href="#devis"> Devis</a></li>
-          <li><a href="#contact"> Contact</a></li>
-          <li><a href="#liensutiles"> Liens Utiles</a></li>
-          <li><a href="#maitrised'oeuvre'"> Maitrise d'oeuvre</a></li>
-          <li><a href="#amenagements"> Aménagements</a></li>
-          <li><a href="#travauxfonciers"> Travaux Fonciers</a></li>
-          <li><a href="#travauxspecifiques"> Travaux Spécifiques</a></li>
-        </ul>
-      </div>
+                                    </ul>
+                                </div>
 
-      <div class="col-md-3 col-sm-6 paddingtop-bottom">
-        <div class="fb-page" data-href="https://www.facebook.com/cecile.bibette" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-          <div class="fb-xfbml-parse-ignore">
-            <blockquote cite="https://www.facebook.com/cecile.bibette"><a href="https://www.facebook.com/cecile.bibette" target="_blank">Facebook</a></blockquote>
+                                <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                                    <h6 class="heading7">PLAN DU SITE</h6>
+                                    <ul class="footer-ul">
+                                        <li><a href="#prestations"> Prestations</a></li>
+                                        <li><a href="#references"> Références</a></li>
+                                        <li><a href="#devis"> Devis</a></li>
+                                        <li><a href="#contact"> Contact</a></li>
+                                        <li><a href="#liensutiles"> Liens Utiles</a></li>
+                                        <li><a href="#maitrised'oeuvre'"> Maitrise d'oeuvre</a></li>
+                                        <li><a href="#amenagements"> Aménagements</a></li>
+                                        <li><a href="#travauxfonciers"> Travaux Fonciers</a></li>
+                                        <li><a href="#travauxspecifiques"> Travaux Spécifiques</a></li>
+                                    </ul>
+                                </div>
 
-            <div class="fb-page" data-href="https://fr.linkedin.com/in/cecile-bibette-5382a6ba" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-              <div class="fb-xfbml-parse-ignore">
-                <blockquote cite="https://fr.linkedin.com/in/cecile-bibette-5382a6ba"><a href="https://fr.linkedin.com/in/cecile-bibette-5382a6ba" target="_blank">Linkedin</a></blockquote>
+                                <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                                    <div class="fb-page" data-href="https://www.facebook.com/cecile.bibette" data-tabs="timeline" data-height="300" data-small-header="false"
+                                        style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false"
+                                        data-show-facepile="true">
+                                        <div class="fb-xfbml-parse-ignore">
+                                            <blockquote cite="https://www.facebook.com/cecile.bibette"><a href="https://www.facebook.com/cecile.bibette" target="_blank">Facebook</a></blockquote>
 
-          <div class="fb-page" data-href="https://www.youtube.com/watch?v=uRiJFOC_eJA" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-            <div class="fb-xfbml-parse-ignore">
-              <blockquote cite="https://www.youtube.com/watch?v=uRiJFOC_eJA"><a href="https://www.youtube.com/watch?v=uRiJFOC_eJA" target="_blank">YouTube</a></blockquote>
+                                            <div class="fb-page" data-href="https://fr.linkedin.com/in/cecile-bibette-5382a6ba" data-tabs="timeline" data-height="300"
+                                                data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true"
+                                                data-hide-cover="false" data-show-facepile="true">
+                                                <div class="fb-xfbml-parse-ignore">
+                                                    <blockquote cite="https://fr.linkedin.com/in/cecile-bibette-5382a6ba"><a href="https://fr.linkedin.com/in/cecile-bibette-5382a6ba" target="_blank">Linkedin</a></blockquote>
 
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-        
-                </footer>
-                 <div class="copyright">
-  <div class="container">
-    <div class="col-md-12">
-      <p>© Copyright &copy; 2017 - All Rights Reserved</p>
-    </div>
-            </div>
-        </div>
-    </div>
+                                                    <div class="fb-page" data-href="https://www.youtube.com/watch?v=uRiJFOC_eJA" data-tabs="timeline" data-height="300" data-small-header="false"
+                                                        style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false"
+                                                        data-show-facepile="true">
+                                                        <div class="fb-xfbml-parse-ignore">
+                                                            <blockquote cite="https://www.youtube.com/watch?v=uRiJFOC_eJA"><a href="https://www.youtube.com/watch?v=uRiJFOC_eJA" target="_blank">YouTube</a></blockquote>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                    </footer>
+                    <div class="copyright">
+                        <div class="container">
+                            <div class="col-md-12">
+                                <p>© Copyright &copy; 2017 - All Rights Reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
 </body>
 
 </html>

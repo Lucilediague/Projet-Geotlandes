@@ -26,29 +26,27 @@ color:white;
 	    Le Menu
 ///////////////////////*/
 
-.container-fluid{
-	margin:auto;
-}
+
 #conteneur-menu{
 	overflow-y: visible ;
 }
 #menu{
 	width: 100%;
-  	margin:0;
-	background-color: rgba(78,78,78,0.4);
+	padding: 0;
+	background-color: rgba(78,78,78,0.6);
+	z-index: 1000;
+	font-family: 'Raleway', sans-serif;
 	font-size: 23px;
 	font-weight: lighter;
 	text-align: center;
 	text-transform: uppercase;
-	/*z-index: 1000;*/
-	position: absolute;
+	position: fixed;	
 }
 #menu dl{
 	float:left;
     height:60px;  
     margin:0 auto;
-	padding:0px 0px 0px 0px;
-	min-width:250px;
+	min-width:267px;
 	display:block;
 }
 #menu dt{
@@ -62,7 +60,7 @@ color:white;
 }
 
 #menu dt a{ 
-    /*color:#373737;*/
+    color:white;
 	display:block;
 	text-decoration:none;
 	font-weight:lighter;
@@ -114,33 +112,19 @@ color:white;
 #menu dl:hover dd{
 	display:block;
 }
-
-
-
 /*///////////////////////
 	    Fin Menu
 ///////////////////////*/
 
-/*//////////////////////
-		body
-/////////////////////*/
-
-body{
-	margin:0;
-	padding:0;
-	font-family: font-family 'Source Sans Pro', sans-serif;
-	
-}
-.clear{
-clear:both; 
-}
-a{
-text-decoration:none;
-color:white;
-}
-a:hover{
-text-decoration:none;
-color:white;
+h1.oeuvres{
+	width:100%;
+	margin:0 auto;
+	padding-top:-20px;
+	font-size: 30px;
+	letter-spacing: 0px;
+	line-height: 30px;
+	font-weight: normal;
+	color:black;
 }
 h1{
 font-size: 30px;
@@ -154,6 +138,7 @@ p, ul{
 
 .texte {
 	margin-top: 80px;
+
 }
 
 /*//////////////////////

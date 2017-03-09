@@ -7,14 +7,7 @@
 	min-width:210px;
 }
 
-.geometre {
-	width: 250px;
-  	height: 208px;
-  	background-size: cover;
-  	position: relative;
-  	margin: -140px 20px 0px 20px;
-  	border: 3px solid green;
-}
+
 
 h1{
 	width: 248px;
@@ -27,53 +20,8 @@ h1{
 
 }
 
-.texte2{
-	width: 60%;
-	float:left;
-	margin-right: 20px;
-	padding: 5px 10px;
-	border: 1px dotted grey;
-	margin-top:90px;
-}
-.bandeau{
-    display: none;
-}
-.picture2 {
-	float:left;
-	width: 40%;
-	margin:0 auto;
-	border: 3px solid green;
-	background-image: url(../images/oeuvre/maitrise-oeuvre.jpg);
-	width: 450px;
-	height: 338px;
-	padding:0px;
-}
 }
 @media only screen and (max-width:1200px){
-
-.geometre {
-	width: 200px;
-  	height: 167px;
-  	background-size: cover;
-  	position: relative;
-  	margin: -110px 30px 0px 30px;
-  	border: 3px solid green;
-}
-
-h1{
-	width: 198px;
-	height: 165px;
-	font-size: 23px;
-	margin-top:-2px;
-	font-weight: lighter;
-	line-height: 20px;
-	color: white;
-	letter-spacing: 2px;
-	padding-top:70px;
-	text-align: center;
-	text-transform: uppercase;
-	background-color: none;	
-}
 
 }
 
@@ -88,6 +36,7 @@ h1{
 	bottom:0;
 	right:0;
 	left:0; 
+
 }
 .site-pusher{
 	transform: translateX(0px);
@@ -135,9 +84,12 @@ h1{
 #menu dl{
 	float: none;
 	position: static;
+
+
 }
 #menu dt{
 	border-bottom:solid 1px slategrey;
+
 }
 #menu dd{
 	z-index: 998;
@@ -147,29 +99,22 @@ h1{
 	min-width: 260px;
 	margin:-60px 0px 0px 260px;	
 }
-.carousel {
-	margin-top:-300px;
-}
+
 #menu a{
 	display: block;
 	height: 40px;
 	line-height: 40px;
 	text-align: center;
+
 }
 .with--sidebar .site-pusher{
 		transform: translateX(240px);
 }
+
 .rectangle{
 	display: 100%;
 }
-.geometre {
-	width: 200px;
-  	height: 167px;
-  	background-size: cover;
-  	position: relative;
-  	margin: -130px 12px 0px 12px;
-  	border: 3px solid green;
-}
+
 h1{
 	width: 198px;
 	height: 165px;
@@ -186,14 +131,7 @@ h1{
 }
 }
 @media only screen and (max-width:940px){
-.geometre {
-	width: 150px;
-  	height: 125px;
-  	background-size: cover;
-  	position: relative;
-  	margin: -100px 15px 0px 35px;
-  	border: 3px solid green;
-}
+
 h1{
 	width: 148px;
 	height: 123px;
@@ -236,13 +174,7 @@ h1{
 	display: none;
 }
 }
-
-
-
-
-
 @media only screen and (max-width:320px){
-
 /*///////////////////////
 	    Le Menu
 ///////////////////////*/
@@ -325,30 +257,8 @@ h1{
 /*///////////////////////
 	    Fin Menu
 ///////////////////////*/
-.carousel {
-	margin-top:-300px;
-}
 
-.rectangle{
-	display: none;
-}
-#presentation {
-	width: 100%;
-	background: white;
-  	padding: 0px 15px 1500px 15px;
-  	margin: 0px auto;
-	margin-top:-150px;
-}
-h1.presentation {
-	width:100%;
-	margin:0 auto;
-	font-size: 30px;
-	letter-spacing: 0px;
-	line-height: 30px;
-	font-weight: normal;
-	color:black;
-	text-align: center;
-}
+
 h1.oeuvres{
 	width:100%;
 	margin:0 auto;
@@ -358,60 +268,36 @@ h1.oeuvres{
 	line-height: 30px;
 	font-weight: normal;
 	color:black;
-	text-align: center;
+	
 }
-.picture {
-	margin:0 auto;
-	margin-top: 80px;
-	width: 100%;
-	height: 287px;
-	padding:0px;
-	border: 3px solid green;
+.photobandeau {
+    margin-top:-200px;
 }
 .texte{
     width:100%;
-    margin:20px auto;
+ 
 	padding: 15px 10px;
-    border: 1px dotted grey;
+    margin-top:-200px;
+    margin-left: -15px;
+    border:none;
 }
-.text-oeuvre {	
-	width: 100%;
-	margin:20px auto;
-	padding: 0 auto;
-}
-
-.picture1{
-	width: 100%;
-	margin:0 auto;
-	height: 302px;
-	padding:0px 0px;
-	border: 3px solid green;
-}
-.texte2{
-	width: 100%;
-	padding: 0 auto;
-	margin:20px auto;
+.specifique{
+    width:100%;
+	padding: 15px 10px;
+    margin-top:-200px;
+    margin-left: -15px;
+    border:none;
 }
 
 .oeuvre {
 	width: 100%;
 	background: #f2f2f2;
-  	padding: -0px 15px 1100px 15px;
+  	padding: 0px 15px 1100px 15px;
   	margin: 0px auto;
 	
 }
-.picture2 {
-	width: 100%;
-	height: 338px;
-	margin:0 auto;
-	border: 3px solid green;
-	padding:0px 0px;
-}
 
-#references {
-	background-image: none;
-	padding:0px 10px 250px 0px;
-}
+
 h3.hidden {
 	width:90%;
 	margin:0 auto;
@@ -424,23 +310,16 @@ h3.hidden {
 	text-align: center;
 }
 
-.video {
+
 	
-	margin-top: 100px;
-	width:300px;
-	height: 180px;
-
-}
-
-.contact{
-	float: none;
-	width:90%;
-	padding: 30px 10px 90px 10px;
+.devis {
+    float: none;
+	width:100%;
+	padding: 0px 10px 90px 10px;
 	margin: 10px 10px;
-	
-
-
 }
+
+
 .formulaire{
 	float: none;
 	width:100%;
@@ -457,15 +336,11 @@ input[type=text] , input[type=email], input[type=number] {
 
 textarea{
  	background-color:#F5F5F5;
-	width: 280px;
+	width: 250px;
 	height:300px; 
 
 }
-.google{
 
-	width:280px;
-	height:320px;
-}
 
 
 }

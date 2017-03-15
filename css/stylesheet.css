@@ -304,23 +304,34 @@ h1.oeuvres{
 	float: right;
 	margin-top: 275px;
 }
-
-h3.hidden {
+.hidden {
+	display:inline-block;
+	visibility: visible;
+	margin:0 auto;
+	font-size: 30px;
+	letter-spacing: 0px;
+	line-height: 30px;
+	font-weight: normal;
+	color:black;
+	text-align: center;
+}
+/*.hidden {
 	visibility: hidden;
 	display : none;
-}
+}*/
 
 /*///////////////////////
 		Contact
 ///////////////////////*/
 .contact{
-	width:100%;
+	width:95%;
 	margin-left: 50px;
 	padding: 0px 10px 700px 10px;
 }
 .formulaire{
 	float:left;
 	width:50%;
+	padding-left: 60px;
 }
 textarea{
  	background-color:#F5F5F5;
@@ -341,10 +352,11 @@ input {
 
 input[type=submit], input[type=reset] {
  width:100px;
- margin-left:5px;
  box-shadow:1px 1px 1px limegreen;
  cursor:pointer;
  }
+
+ 
  h1, h2{
      color:green;
 	 font-size: 30px;

@@ -412,12 +412,12 @@ h1.oeuvres{
 	background-image: none;
 	padding:0px 10px 250px 0px;
 }
-h3.hidden {
-	width:90%;
+.hidden {
+	display:inline-block;
+	visibility: visible;
 	margin:0 auto;
 	font-size: 30px;
 	letter-spacing: 0px;
-	visibility: visible;
 	line-height: 30px;
 	font-weight: normal;
 	color:black;
@@ -437,6 +437,7 @@ h3.hidden {
 	width:90%;
 	padding: 30px 10px 90px 10px;
 	margin: 10px 10px;
+	margin-left: 0px;
 	
 
 
@@ -444,6 +445,7 @@ h3.hidden {
 .formulaire{
 	float: none;
 	width:100%;
+	padding-left: 10px;
 }
 
 input[type=text] , input[type=email], input[type=number] {
